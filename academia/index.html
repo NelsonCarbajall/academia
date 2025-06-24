@@ -1,167 +1,262 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mimo Evolution</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/icon.png" type="image/x-icon">
+  <meta name="description"
+    content="Mimo Evolution - Sua academia completa em Manaus. Planos acessíveis, personal trainers qualificados e loja de suplementos. Transforme seu corpo conosco!">
+  <meta name="keywords"
+    content="academia, fitness, mimo evolution, treino, musculação, suplementos, saúde, bem-estar, personal trainer, emagrecimento, hipertrofia">
+  <meta name="author" content="Mimo Evolution">
+
   <style>
     html {
       scroll-behavior: smooth;
     }
-    .mensagem-destaque {
-  width: 100%;
-  background: linear-gradient(90deg, #198754 0%, #28a745 50%, #146c43 100%);
-  font-size: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
 
-   
+    .mensagem-destaque {
+      width: 100%;
+      background: linear-gradient(90deg, #198754 0%, #28a745 50%, #146c43 100%);
+      font-size: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+
     section {
       padding-top: 60px;
       padding-bottom: 60px;
     }
+
     body {
       scroll-behavior: smooth;
-      
+
     }
+
     .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
-    url("https://i.pinimg.com/originals/44/92/4c/44924c401eb2a0a45944d2e261489ead.jpg");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 80px 20px;
-}
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+        url("https://i.pinimg.com/originals/44/92/4c/44924c401eb2a0a45944d2e261489ead.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 80px 20px;
+    }
 
 
     .plan-card {
       transition: transform 0.3s;
     }
+
     .plan-card:hover {
       transform: scale(1.03);
     }
+
     footer {
       background-color: #198754;
       color: white;
     }
-    
-  /* ... estilos existentes ... */
 
-  /* Navbar aprimorada */
-  .navbar {
-  background: linear-gradient(135deg, #198754 0%, #146c43 100%);
-  padding: 10px 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-bottom: 3px solid #146c43;
-}
+    /* ... estilos existentes ... */
 
-.navbar-brand {
-  font-weight: bold;
-  font-size: 1.4rem;
-  letter-spacing: 1px;
-  color: white !important;
-  transition: transform 0.3s;
-}
-.navbar-brand:hover {
-  transform: scale(1.05);
-}
-
-.navbar-nav .nav-link {
-  color: #ffffff !important;
-  font-weight: bold;
-  
-  border: 2px solid transparent;
-  border-radius: 20px;
-  transition: all 0.3s ease;
-}
-
-.navbar-nav .nav-link {
-  position: relative;
-}
-
-.navbar-nav .nav-link::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0%;
-  height: 3px;
-  background-color: white;
-  transition: width 0.3s ease-in-out;
-  border-radius: 2px;
-}
-
-.navbar-nav .nav-link:hover::after,
-.navbar-nav .nav-link.active::after {
-  width: 100%;
-}
-
-
-
-  /* Botão aprimorado */
-  .btn-custom {
-    
-    background-color: none;
-    color: #198754;
-    border: 2px solid #198754;
-    font-weight: bold;
-    padding: 12px 24px;
-    border-radius: 50px;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .btn-custom:hover {
-    background-color: #198754;
-    color: white;
-    border-color: #146c43;
-    transform: scale(1.05);
-  }
-
-  /* Responsividade extra para navbar-brand */
-  @media (max-width: 768px) {
-    .navbar-brand {
-      font-size: 1.2rem;
+    /* Navbar aprimorada */
+    .navbar {
+      background: linear-gradient(135deg, #198754 0%, #146c43 100%);
+      padding: 10px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-bottom: 3px solid #146c43;
     }
-  }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+      color: white !important;
+      transition: transform 0.3s;
+    }
+
+    .navbar-brand:hover {
+      transform: scale(1.05);
+    }
+
+    .navbar-nav .nav-link {
+      color: #ffffff !important;
+      font-weight: bold;
+
+      border: 2px solid transparent;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-nav .nav-link {
+      position: relative;
+    }
+
+    .navbar-nav .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0%;
+      height: 3px;
+      background-color: white;
+      transition: width 0.3s ease-in-out;
+      border-radius: 2px;
+    }
+
+    .navbar-nav .nav-link:hover::after,
+    .navbar-nav .nav-link.active::after {
+      width: 100%;
+    }
+
+
+
+    /* Botão aprimorado */
+    .btn-custom {
+
+      background-color: none;
+      color: #198754;
+      border: 2px solid #198754;
+      font-weight: bold;
+      padding: 12px 24px;
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-custom:hover {
+      background-color: #198754;
+      color: white;
+      border-color: #146c43;
+      transform: scale(1.05);
+    }
+
+    /* Responsividade extra para navbar-brand */
+    @media (max-width: 768px) {
+      .navbar-brand {
+        font-size: 1.2rem;
+      }
+    }
+
+    /* Lightbox básico */
+    .img-zoom {
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .img-zoom:hover {
+      transform: scale(1.05);
+    }
+
+    #lightbox {
+      position: fixed;
+      display: none;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.9);
+    }
+
+    #lightbox img {
+      position: absolute;
+      max-width: 90%;
+      max-height: 90%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #lightbox:target {
+      display: block;
+    }
+
+    .card-beneficios {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+
+    .card.expanded .card-beneficios {
+      max-height: 500px;
+      /* Ajuste conforme o conteúdo */
+      padding-top: 10px;
+    }
+
+    .plan-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    #planos .card {
+      border: 2px solid transparent;
+      transition: border-color 0.3s ease, transform 0.3s ease;
+    }
+
+    #planos .card:hover {
+
+      transform: scale(1.03);
+    }
+
+    #planos .card {
+      border: 2px solid transparent;
+      transition: border-color 0.3s ease, transform 0.3s ease;
+      cursor: pointer;
+    }
+  .carousel-control-prev {
+  left: 20px !important;
+  top: 69% !important;
+  width: 40px;
+  transform: translateY(-65%) !important;
+}
+
+.carousel-control-next {
+  right: 20px !important;
+  top: 69% !important;
+  width: 40px;
+  transform: translateY(-65%) !important;
+}
 
 
   </style>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Adicione o script aqui -->
-<script>
-  
-    
+  <!-- Adicione o script aqui -->
+  <script>
+
+
     document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll("section[id]");
-    const navLinks = document.querySelectorAll(".nav-link");
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll(".nav-link");
 
-    function updateActiveLink() {
-      let current = "";
+      function updateActiveLink() {
+        let current = "";
 
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop - 100; // ajusta conforme altura da navbar
-        if (pageYOffset >= sectionTop) {
-          current = section.getAttribute("id");
-        }
-      });
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 100; // ajusta conforme altura da navbar
+          if (pageYOffset >= sectionTop) {
+            current = section.getAttribute("id");
+          }
+        });
 
-      navLinks.forEach((link) => {
-        link.classList.remove("active");
-        if (link.getAttribute("href") === "#" + current) {
-          link.classList.add("active");
-        }
-      });
-    }
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+          }
+        });
+      }
 
-    window.addEventListener("scroll", updateActiveLink);
-  });
-</script>
+      window.addEventListener("scroll", updateActiveLink);
+    });
+  </script>
 
 
-</body>
+  </body>
 
 </head>
+
 <body>
 
   <!-- Navbar fixa -->
@@ -197,120 +292,221 @@
 
 
   <section class="py-5 bg-light">
-  <div class="container text-center">
-    <h2 class="mb-4">Por que escolher a Mimo Evolution?</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <img src="https://img.icons8.com/?size=100&id=2OpTZtF0g11H&format=png&color=198754" alt="Equipamentos">
-        <h5 class="mt-3">Equipamentos de última geração</h5>
-        <p>Treine com as melhores máquinas e tecnologias do mercado.</p>
-      </div>
-      <div class="col-md-4">
-        <img src="https://img.icons8.com/ios-filled/80/198754/personal-trainer.png" alt="Personal Trainer">
-        <h5 class="mt-3">Acompanhamento com Personal</h5>
-        <p>Profissionais especializados para te ajudar a alcançar seus objetivos.</p>
-      </div>
-      <div class="col-md-4">
-        <img src="https://img.icons8.com/ios-filled/80/198754/calendar.png" alt="Horários Flexíveis">
-        <h5 class="mt-3">Horários Flexíveis</h5>
-        <p>Abra das 5h às 23h, 7 dias por semana. Treine quando quiser!</p>
+    <div class="container text-center">
+      <h2 class="mb-4">Por que escolher a Mimo Evolution?</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <img src="https://img.icons8.com/?size=100&id=2OpTZtF0g11H&format=png&color=198754" loading="lazy"
+            alt="Equipamentos">
+          <h5 class="mt-3">Equipamentos de última geração</h5>
+          <p>Treine com as melhores máquinas e tecnologias do mercado.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://img.icons8.com/ios-filled/80/198754/personal-trainer.png" loading="lazy"
+            alt="Personal Trainer">
+          <h5 class="mt-3">Acompanhamento com Personal</h5>
+          <p>Profissionais especializados para te ajudar a alcançar seus objetivos.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://img.icons8.com/ios-filled/80/198754/calendar.png" loading="lazy" alt="Horários Flexíveis">
+          <h5 class="mt-3">Horários Flexíveis</h5>
+          <p>Abra das 5h às 23h, 7 dias por semana. Treine quando quiser!</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  
+
 
   <!-- Seção Galeria -->
   <section id="galeria" class="bg-light text-center">
-  <div class="container py-5">
-    <h2 class="mb-4">Confira nossa estrutura</h2>
-    <div id="carouselGaleria" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
+    <div class="container py-5">
+      <h2 class="mb-4">Confira nossa estrutura</h2>
+      <div id="carouselGaleria" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
 
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <div class="row">
-            <div class="col-md-4">
-              <img src="/image1.png" class="d-block w-100 rounded shadow" alt="Academia 1">
-            </div>
-            <div class="col-md-4">
-              <img src="/image2.png" class="d-block w-100 rounded shadow" alt="Academia 2">
-            </div>
-            <div class="col-md-4">
-              <img src="/image3.png" class="d-block w-100 rounded shadow" alt="Academia 3">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="/image1.png" class="d-block w-100 rounded shadow img-zoom" loading="lazy" alt="Academia 1">
+              </div>
+              <div class="col-md-4">
+                <img src="/image2.png" class="d-block w-100 rounded shadow img-zoom" loading="lazy" alt="Academia 2">
+              </div>
+              <div class="col-md-4">
+                <img src="/image3.png" class="d-block w-100 rounded shadow img-zoom" loading="lazy" alt="Academia 3">
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-md-4">
-              <img src="/image4.png" class="d-block w-100 rounded shadow" alt="Academia 4">
-            </div>
-            <div class="col-md-4">
-              <img src="/image6.png" class="d-block w-100 rounded shadow" alt="Academia 5">
-            </div>
-            <div class="col-md-4">
-              <img src="/image5.png" class="d-block w-100 rounded shadow" alt="Academia 6">
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="/image4.png" class="d-block w-100 rounded shadow img-zoom" loading="lazy" alt="Academia 4">
+              </div>
+              <div class="col-md-4">
+                <img src="/image6.png" class="d-block w-100 rounded shadow img-zoom" loading="lazy" alt="Academia 5">
+              </div>
+              <div class="col-md-4">
+                <img src="/image5.png" class="d-block w-100 rounded shadow img-zoom" loading="lazy" alt="Academia 6">
+              </div>
             </div>
           </div>
+
         </div>
 
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
-
-      <!-- Controles -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
-<!-- Seção Personal Trainers com Carrossel -->
-<section id="personais" class="py-5 bg-light text-center">
+  <!-- Seção Personal Trainers com Carrossel -->
+  <section id="personais" class="py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="mb-5">Conheça nossos Personal Trainers</h2>
+
+      <div id="carouselPersonais" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                  <img src="/perfil.jpg" class="rounded-circle mx-auto d-block mt-4" loading="lazy" alt="João Silva"
+                    style="width: 180px; height: 180px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title">João Silva</h5>
+                    <p class="card-text">Especialista em hipertrofia e condicionamento físico.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                  <img src="/perfil.jpg" class="rounded-circle mx-auto d-block mt-4" loading="lazy" alt="João Silva"
+                    style="width: 180px; height: 180px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title">João Silva</h5>
+                    <p class="card-text">Especialista em hipertrofia e condicionamento físico.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                  <img src="/perfil.jpg" class="rounded-circle mx-auto d-block mt-4" loading="lazy" alt="Maria Oliveira"
+                    style="width: 180px; height: 180px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title">Maria Oliveira</h5>
+                    <p class="card-text">Treinadora focada em emagrecimento e saúde funcional.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                  <img src="/perfil.jpg" class="rounded-circle mx-auto d-block mt-4" loading="lazy" alt="Carlos Souza"
+                    style="width: 180px; height: 180px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title">Carlos Souza</h5>
+                    <p class="card-text">Personal com foco em atletas e alto rendimento.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                  <img src="/perfil.jpg" class="rounded-circle mx-auto d-block mt-4" loading="lazy" alt="João Silva"
+                    style="width: 180px; height: 180px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title">João Silva</h5>
+                    <p class="card-text">Especialista em hipertrofia e condicionamento físico.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                  <img src="/perfil.jpg" class="rounded-circle mx-auto d-block mt-4" loading="lazy" alt="João Silva"
+                    style="width: 180px; height: 180px; object-fit: cover;">
+                  <div class="card-body">
+                    <h5 class="card-title">João Silva</h5>
+                    <p class="card-text">Especialista em hipertrofia e condicionamento físico.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPersonais" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPersonais" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+<!-- Seção Loja com Carrossel -->
+<section id="loja" class="bg-light py-5 text-center">
   <div class="container">
-    <h2 class="mb-5">Conheça nossos Personal Trainers</h2>
-    
-    <div id="carouselPersonais" class="carousel slide" data-bs-ride="carousel">
+    <h2 class="mb-4">Suplementos e Produtos</h2>
+    <div id="carouselLoja" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
 
         <!-- Slide 1 -->
         <div class="carousel-item active">
           <div class="row g-4 justify-content-center">
             <div class="col-md-4">
-              <div class="card shadow-sm border-0">
-                <img src="/perfil.jpg" class="rounded-circle mx-auto d-block mt-4" alt="João Silva"
-                     style="width: 180px; height: 180px; object-fit: cover;">
+              <div class="card h-100 shadow-sm">
+                <img src="/whaey.png" class="card-img-top" loading="lazy" alt="Whey Protein" />
                 <div class="card-body">
-                  <h5 class="card-title">João Silva</h5>
-                  <p class="card-text">Especialista em hipertrofia e condicionamento físico.</p>
+                  <h5 class="card-title">Whey Protein</h5>
+                  <p class="card-text">Suplemento essencial para recuperação muscular. 900g.</p>
+                  <p class="text-success fw-bold">R$ 149,90</p>
+                  <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse em comprar o Whey Protein da loja da Mimo Evolution." target="_blank" class="btn btn-custom">Entrar em Contato</a>
                 </div>
               </div>
             </div>
+
             <div class="col-md-4">
-              <div class="card shadow-sm border-0">
-                <img src="/perfil.jpg" class="rounded-circle mx-auto d-block mt-4" alt="João Silva"
-                     style="width: 180px; height: 180px; object-fit: cover;">
+              <div class="card h-100 shadow-sm">
+                <img src="/creatina1.png" class="card-img-top" loading="lazy" alt="Creatina" />
                 <div class="card-body">
-                  <h5 class="card-title">João Silva</h5>
-                  <p class="card-text">Especialista em hipertrofia e condicionamento físico.</p>
+                  <h5 class="card-title">Creatina</h5>
+                  <p class="card-text">Aumente sua força e desempenho nos treinos. 300g.</p>
+                  <p class="text-success fw-bold">R$ 89,90</p>
+                  <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse em comprar a Creatina da loja da Mimo Evolution." target="_blank" class="btn btn-custom">Entrar em Contato</a>
                 </div>
               </div>
             </div>
+
             <div class="col-md-4">
-              <div class="card shadow-sm border-0">
-                <img src="/perfil.jpg" class="rounded-circle mx-auto d-block mt-4" alt="Maria Oliveira"
-                     style="width: 180px; height: 180px; object-fit: cover;">
+              <div class="card h-100 shadow-sm">
+                <img src="/imaget.png" class="card-img-top" loading="lazy" alt="Termogênico" />
                 <div class="card-body">
-                  <h5 class="card-title">Maria Oliveira</h5>
-                  <p class="card-text">Treinadora focada em emagrecimento e saúde funcional.</p>
+                  <h5 class="card-title">Termogênico</h5>
+                  <p class="card-text">Ajuda na queima de gordura e acelera o metabolismo.</p>
+                  <p class="text-success fw-bold">R$ 69,90</p>
+                  <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse em comprar o Termogênico da loja da Mimo Evolution." target="_blank" class="btn btn-custom">Entrar em Contato</a>
                 </div>
               </div>
             </div>
@@ -318,35 +514,40 @@
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item">
+        <div class="carousel-item" >
           <div class="row g-4 justify-content-center">
-            <div class="col-md-4">
-              <div class="card shadow-sm border-0">
-                <img src="/perfil.jpg" class="rounded-circle mx-auto d-block mt-4" alt="Carlos Souza"
-                     style="width: 180px; height: 180px; object-fit: cover;">
+            <div class="col-md-4" style="padding: 20px;">
+              <div class="card h-100 shadow-sm">
+                <img src="/bcaa.png" class="card-img-top" loading="lazy" alt="BCAA" />
                 <div class="card-body">
-                  <h5 class="card-title">Carlos Souza</h5>
-                  <p class="card-text">Personal com foco em atletas e alto rendimento.</p>
+                  <h5 class="card-title">BCAA</h5>
+                  <p class="card-text">Aminoácidos essenciais para recuperação muscular e redução da fadiga.</p>
+                  <p class="text-success fw-bold">R$ 79,90</p>
+                  <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse em comprar o BCAA da loja da Mimo Evolution." target="_blank" class="btn btn-custom">Entrar em Contato</a>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card shadow-sm border-0">
-                <img src="/perfil.jpg" class="rounded-circle mx-auto d-block mt-4" alt="João Silva"
-                     style="width: 180px; height: 180px; object-fit: cover;">
+
+            <div class="col-md-4" style="padding: 20px;">
+              <div class="card h-100 shadow-sm" >
+                <img src="/vitaminac.png" class="card-img-top" loading="lazy" alt="Vitamina C" />
                 <div class="card-body">
-                  <h5 class="card-title">João Silva</h5>
-                  <p class="card-text">Especialista em hipertrofia e condicionamento físico.</p>
+                  <h5 class="card-title">Vitamina C</h5>
+                  <p class="card-text">Suporte para o sistema imunológico e antioxidante natural.</p>
+                  <p class="text-success fw-bold">R$ 39,90</p>
+                  <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse em comprar a Vitamina C da loja da Mimo Evolution." target="_blank" class="btn btn-custom">Entrar em Contato</a>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card shadow-sm border-0">
-                <img src="/perfil.jpg" class="rounded-circle mx-auto d-block mt-4" alt="João Silva"
-                     style="width: 180px; height: 180px; object-fit: cover;">
+
+            <div class="col-md-4" style="padding: 20px;">
+              <div class="card h-100 shadow-sm">
+                <img src="/omega3.png" class="card-img-top" style="padding: 90px;"  loading="lazy" alt="Ômega 3" />
                 <div class="card-body">
-                  <h5 class="card-title">João Silva</h5>
-                  <p class="card-text">Especialista em hipertrofia e condicionamento físico.</p>
+                  <h5 class="card-title">Ômega 3</h5>
+                  <p class="card-text">Suplemento para saúde cardiovascular e cerebral.</p>
+                  <p class="text-success fw-bold">R$ 59,90</p>
+                  <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse em comprar o Ômega 3 da loja da Mimo Evolution." target="_blank" class="btn btn-custom">Entrar em Contato</a>
                 </div>
               </div>
             </div>
@@ -356,11 +557,11 @@
       </div>
 
       <!-- Controles -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselPersonais" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselLoja" data-bs-slide="prev" style="top: 55%;">
         <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
         <span class="visually-hidden">Anterior</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselPersonais" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselLoja" data-bs-slide="next" style="top: 55%;">
         <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
         <span class="visually-hidden">Próximo</span>
       </button>
@@ -368,146 +569,257 @@
   </div>
 </section>
 
-<!-- Seção Loja -->
-<section id="loja" class="bg-light py-5 text-center">
-  <div class="container">
-    <h2 class="mb-4">Suplementos e Produtos</h2>
-    <div class="row g-4 justify-content-center">
 
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="/image.png" class="card-img-top" alt="Whey Protein">
-          <div class="card-body">
-            <h5 class="card-title">Whey Protein</h5>
-            <p class="card-text">Suplemento essencial para recuperação muscular. 900g.</p>
-            <p class="text-success fw-bold">R$ 149,90</p>
-            <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse em comprar o Whey Protein da loja da Mimo Evolution." target="_blank" class="btn btn-custom">Entrar em Contato</a>
+
+
+
+  <div class="bigb bg-light">
+
+
+    <section id="planos" class="container text-center py-5">
+      <h2 class="mb-4">Escolha o plano ideal para você</h2>
+
+      <div id="carouselPlanos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row justify-content-center g-4">
+              <!-- Plano 1 -->
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">Mensal</h5>
+                    <p class="card-text fs-5">R$ 99,90/mês<br><small>Sem fidelidade</small></p>
+                    <div class="card-beneficios">
+                      ✔️ Acesso livre a todos os equipamentos<br>
+                      ✔️ Sem fidelidade<br>
+                      ✔️ Aulas coletivas inclusas
+                    </div>
+                    <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse no plano Mensal da Mimo Evolution."
+                      target="_blank" class="btn btn-success mt-3">Quero esse plano</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Plano 2 -->
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">Trimestral</h5>
+                    <p class="card-text fs-5">R$ 269,90<br><small>Inclui Personal Trainer</small></p>
+                    <div class="card-beneficios">
+                      ✔️ Tudo do plano Mensal<br>
+                      ✔️ + Acompanhamento com Personal Trainer<br>
+                      ✔️ Desconto especial
+                    </div>
+                    <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse no plano Trimestral da Mimo Evolution."
+                      target="_blank" class="btn btn-success mt-3">Quero esse plano</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Plano 3 -->
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">Anual</h5>
+                    <p class="card-text fs-5">R$ 899,90<br><small>Brinde + Consulta Nutricional</small></p>
+                    <div class="card-beneficios">
+                      ✔️ Tudo dos anteriores<br>
+                      ✔️ + Consulta nutricional<br>
+                      ✔️ + Kit brinde exclusivo<br>
+                      ✔️ Melhor custo-benefício
+                    </div>
+                    <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse no plano Anual da Mimo Evolution."
+                      target="_blank" class="btn btn-success mt-3">Quero esse plano</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="/creatina1.png" class="card-img-top" alt="Creatina">
-          <div class="card-body">
-            <h5 class="card-title">Creatina</h5>
-            <p class="card-text">Aumente sua força e desempenho nos treinos. 300g.</p>
-            <p class="text-success fw-bold">R$ 89,90</p>
-            <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse em comprar a Creatina da loja da Mimo Evolution." target="_blank" class="btn btn-custom">Entrar em Contato</a>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row justify-content-center g-4">
+              <!-- Plano 4 -->
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">Semestral</h5>
+                    <p class="card-text fs-5">R$ 499,90<br><small>Personal Trainer e Consulta Nutricional</small></p>
+                    <div class="card-beneficios">
+                      ✔️ Tudo do plano Trimestral<br>
+                      ✔️ + Consulta nutricional<br>
+                      ✔️ Desconto especial
+                    </div>
+                    <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse no plano Semestral da Mimo Evolution."
+                      target="_blank" class="btn btn-success mt-3">Quero esse plano</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Plano 5 -->
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">Vitalício</h5>
+                    <p class="card-text fs-5">R$ 2499,90<br><small>Acesso para toda a vida</small></p>
+                    <div class="card-beneficios">
+                      ✔️ Acesso vitalício<br>
+                      ✔️ Benefícios exclusivos<br>
+                      ✔️ Suporte prioritário
+                    </div>
+                    <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse no plano Vitalício da Mimo Evolution."
+                      target="_blank" class="btn btn-success mt-3">Quero esse plano</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Plano 6 -->
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">Plano VIP</h5>
+                    <p class="card-text fs-5">R$ 1499,90<br><small>Atendimento exclusivo e aulas personalizadas</small>
+                    </p>
+                    <div class="card-beneficios">
+                      ✔️ Aulas exclusivas<br>
+                      ✔️ Atendimento VIP<br>
+                      ✔️ Treinos personalizados
+                    </div>
+                    <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse no plano VIP da Mimo Evolution."
+                      target="_blank" class="btn btn-success mt-3">Quero esse plano</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="/imaget.png" class="card-img-top" alt="Termogênico">
-          <div class="card-body">
-            <h5 class="card-title">Termogênico</h5>
-            <p class="card-text">Ajuda na queima de gordura e acelera o metabolismo.</p>
-            <p class="text-success fw-bold">R$ 69,90</p>
-            <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse em comprar o Termogênico da loja da Mimo Evolution." target="_blank" class="btn btn-custom">Entrar em Contato</a>
-          </div>
         </div>
-      </div>
 
-    </div>
+        <!-- Controles do carrossel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPlanos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPlanos" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle p-2"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </section>
+
+
   </div>
-</section>
 
 
-<div class="bigb bg-light">
-
-
-  <!-- Seção Planos -->
-  <section id="planos" class="container bg-light  text-center">
-    <h2 class="mb-4">Escolha o plano ideal para você</h2>
-    <div class="row g-4 justify-content-center">
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Mensal</h5>
-            <p class="card-text fs-5">R$ 99,90/mês<br><small>Sem fidelidade</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card border-success shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Trimestral</h5>
-            <p class="card-text fs-5">R$ 269,90<br><small>Inclui Personal Trainer</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Anual</h5>
-            <p class="card-text fs-5">R$ 899,90<br><small>Brinde + Consulta Nutricional</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
- 
-</div>
-
-  
-<div class=" mensagem-destaque text-white text-center py-1">
-  <h5 class="m-0 fw-bold"> Sua jornada começa aqui. Corpo, mente e evolução! </h5>
-</div>l
+  <div class=" mensagem-destaque text-white text-center py-1">
+    <h5 class="m-0 fw-bold"> Sua jornada começa aqui. Corpo, mente e evolução! </h5>
+  </div>
 
 
   <!-- Seção Contato -->
-   <div class="box bg-light ">
-  <section id="contato" class="container ">
-    <h2 class="text-center mb-4">Fale conosco</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <form id="form-contato" onsubmit="enviarParaWhatsApp(event)">
-          <div class="mb-3">
-            <label for="nome" class="form-label">Nome</label>
-            <input type="text" id="nome" class="form-control" required />
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">E-mail</label>
-            <input type="email" id="email" class="form-control" required />
-          </div>
-          <div class="mb-3">
-            <label for="mensagem" class="form-label">Mensagem</label>
-            <textarea id="mensagem" rows="4" class="form-control" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-success w-100">Enviar via WhatsApp</button>
-        </form>
-        
+  <div class="box bg-light ">
+    <section id="contato" class="container ">
+      <h2 class="text-center mb-4">Fale conosco</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form id="form-contato" onsubmit="enviarParaWhatsApp(event)">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" id="nome" class="form-control" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" id="email" class="form-control" required />
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Duvidas</label>
+              <textarea id="mensagem" rows="4" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Enviar via WhatsApp</button>
+          </form>
+
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="bg-success text-white text-center py-4 mt-5">
-    <p class="mb-0">&copy; 2025 Mimo Evolution. Todos os direitos reservados.</p>
-  </footer>
-</div>
-  
-<script>
-  function enviarParaWhatsApp(event) {
-    event.preventDefault();
+    <footer class="bg-success text-white text-center py-4 mt-5">
+      <p class="mb-0">&copy; 2025 Mimo Evolution. Todos os direitos reservados.</p>
+    </footer>
+  </div>
 
-    const nome = document.getElementById("nome").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const mensagem = document.getElementById("mensagem").value.trim();
+  <script>
+    function enviarParaWhatsApp(event) {
+      event.preventDefault();
 
-    const numero = "5592985956726"; // <-- seu número atualizado
-    const texto = `Olá, meu nome é *${nome}*.\n\nEmail: ${email}\n\nMensagem:\n${mensagem}`;
-    const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+      const nome = document.getElementById("nome").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const mensagem = document.getElementById("mensagem").value.trim();
 
-    window.open(url, "_blank");
-  }
-</script>
+      const numero = "5592985956726"; // <-- seu número atualizado
+      const texto = `Olá, meu nome é *${nome}*.\n\nEmail: ${email}\n\nMensagem:\n${mensagem}`;
+      const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+
+      window.open(url, "_blank");
+    }
+  </script>
+
+  <div id="lightbox" onclick="this.style.display='none'">
+    <img id="lightbox-img" src="" alt="Imagem ampliada" />
+  </div>
+
+  <script>
+    document.querySelectorAll('.img-zoom').forEach(img => {
+      img.addEventListener('click', function () {
+        document.getElementById('lightbox-img').src = this.src;
+        document.getElementById('lightbox').style.display = 'block';
+      });
+    });
+
+
+    const beneficios = {
+      "Mensal": "✔️ Acesso livre a todos os equipamentos<br>✔️ Sem fidelidade<br>✔️ Aulas coletivas inclusas",
+      "Trimestral": "✔️ Tudo do plano Mensal<br>✔️ + Acompanhamento com Personal Trainer<br>✔️ Desconto especial",
+      "Anual": "✔️ Tudo dos anteriores<br>✔️ + Consulta nutricional<br>✔️ + Kit brinde exclusivo<br>✔️ Melhor custo-benefício"
+    };
+
+    document.querySelectorAll('#planos .card').forEach(card => {
+      card.addEventListener('click', (e) => {
+        e.stopPropagation();
+
+        // Fecha todos os outros cards
+        document.querySelectorAll('#planos .card').forEach(c => {
+          if (c !== card) c.classList.remove('expanded');
+        });
+
+        // Alterna o card atual
+        card.classList.toggle('expanded');
+
+        // Verifica se já existe o bloco de benefícios, se não, cria
+        let beneficiosDiv = card.querySelector('.card-beneficios');
+        if (!beneficiosDiv) {
+          beneficiosDiv = document.createElement('div');
+          beneficiosDiv.classList.add('card-beneficios');
+          card.appendChild(beneficiosDiv);
+        }
+
+        const titulo = card.querySelector('.card-title').innerText;
+        beneficiosDiv.innerHTML = beneficios[titulo] || "Benefícios não encontrados.";
+      });
+    });
+
+    // Fechar ao clicar fora
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('#planos .card')) {
+        document.querySelectorAll('#planos .card').forEach(card => {
+          card.classList.remove('expanded');
+        });
+      }
+    });
+
+
+  </script>
+
 
 </body>
-
-</body>
-</html>
 
 
 </html>
