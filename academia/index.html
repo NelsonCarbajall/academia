@@ -205,21 +205,20 @@
       transition: border-color 0.3s ease, transform 0.3s ease;
       cursor: pointer;
     }
-  .carousel-control-prev {
-  left: 20px !important;
-  top: 69% !important;
-  width: 40px;
-  transform: translateY(-65%) !important;
-}
 
-.carousel-control-next {
-  right: 20px !important;
-  top: 69% !important;
-  width: 40px;
-  transform: translateY(-65%) !important;
-}
+    .carousel-control-prev {
+      left: 20px !important;
+      top: 69% !important;
+      width: 40px;
+      transform: translateY(-65%) !important;
+    }
 
-
+    .carousel-control-next {
+      right: 20px !important;
+      top: 69% !important;
+      width: 40px;
+      transform: translateY(-65%) !important;
+    }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Adicione o script aqui -->
@@ -453,11 +452,11 @@
         </div>
 
         <!-- Controles -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPersonais" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" style="margin-left: -3%;"  data-bs-target="#carouselPersonais" data-bs-slide="prev">
           <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
           <span class="visually-hidden">Anterior</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselPersonais" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" style="margin-right: -3%;" data-bs-target="#carouselPersonais" data-bs-slide="next">
           <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
           <span class="visually-hidden">Próximo</span>
         </button>
@@ -465,117 +464,132 @@
     </div>
   </section>
 
-<!-- Seção Loja com Carrossel -->
-<section id="loja" class="bg-light py-5 text-center">
-  <div class="container">
-    <h2 class="mb-4">Suplementos e Produtos</h2>
-    <div id="carouselLoja" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
+  <!-- Seção Loja com Carrossel -->
+  <section id="loja" class="bg-light py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4">Suplementos e Produtos</h2>
+      <div id="carouselLoja" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
 
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <div class="row g-4 justify-content-center">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row g-4 justify-content-center">
 
-            <!-- Produto 1 -->
-            <div class="col-md-4">
-              <div class="card h-100 shadow-sm">
-                <img src="/whaey.png" class="card-img-top img-fluid" alt="Whey Protein" style="height: 250px; object-fit: contain;">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Whey Protein</h5>
-                  <p class="card-text flex-grow-1">Suplemento essencial para recuperação muscular. 900g.</p>
-                  <p class="text-success fw-bold">R$ 149,90</p>
-                  <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse em comprar o Whey Protein." target="_blank" class="btn btn-custom w-100">Entrar em Contato</a>
+              <!-- Produto 1 -->
+              <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="/whaey.png" class="card-img-top img-fluid" alt="Whey Protein"
+                    style="height: 250px; object-fit: contain;">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Whey Protein</h5>
+                    <p class="card-text flex-grow-1">Suplemento essencial para recuperação muscular. 900g.</p>
+                    <p class="text-success fw-bold">R$ 149,90</p>
+                    <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse em comprar o Whey Protein."
+                      target="_blank" class="btn btn-custom w-100">Entrar em Contato</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Produto 2 -->
-            <div class="col-md-4">
-              <div class="card h-100 shadow-sm">
-                <img src="/creatina1.png" class="card-img-top img-fluid" alt="Creatina" style="height: 250px; object-fit: contain;">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Creatina</h5>
-                  <p class="card-text flex-grow-1">Aumente sua força e desempenho nos treinos. 300g.</p>
-                  <p class="text-success fw-bold">R$ 89,90</p>
-                  <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse em comprar a Creatina." target="_blank" class="btn btn-custom w-100">Entrar em Contato</a>
+              <!-- Produto 2 -->
+              <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="/creatina1.png" class="card-img-top img-fluid" alt="Creatina"
+                    style="height: 250px; object-fit: contain;">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Creatina</h5>
+                    <p class="card-text flex-grow-1">Aumente sua força e desempenho nos treinos. 300g.</p>
+                    <p class="text-success fw-bold">R$ 89,90</p>
+                    <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse em comprar a Creatina."
+                      target="_blank" class="btn btn-custom w-100">Entrar em Contato</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Produto 3 -->
-            <div class="col-md-4">
-              <div class="card h-100 shadow-sm">
-                <img src="/imaget.png" class="card-img-top img-fluid" alt="Termogênico" style="height: 250px; object-fit: contain;">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Termogênico</h5>
-                  <p class="card-text flex-grow-1">Ajuda na queima de gordura e acelera o metabolismo.</p>
-                  <p class="text-success fw-bold">R$ 69,90</p>
-                  <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse em comprar o Termogênico." target="_blank" class="btn btn-custom w-100">Entrar em Contato</a>
+              <!-- Produto 3 -->
+              <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="/imaget.png" class="card-img-top img-fluid" alt="Termogênico"
+                    style="height: 250px; object-fit: contain;">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Termogênico</h5>
+                    <p class="card-text flex-grow-1">Ajuda na queima de gordura e acelera o metabolismo.</p>
+                    <p class="text-success fw-bold">R$ 69,90</p>
+                    <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse em comprar o Termogênico."
+                      target="_blank" class="btn btn-custom w-100">Entrar em Contato</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
+            </div>
           </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row g-4 justify-content-center">
+
+              <!-- Produto 4 -->
+              <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="/bcaa.png" class="card-img-top img-fluid" alt="BCAA"
+                    style="height: 250px; object-fit: contain;">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">BCAA</h5>
+                    <p class="card-text flex-grow-1">Aminoácidos essenciais para recuperação muscular e redução da
+                      fadiga.</p>
+                    <p class="text-success fw-bold">R$ 79,90</p>
+                    <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse em comprar o BCAA." target="_blank"
+                      class="btn btn-custom w-100">Entrar em Contato</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Produto 5 -->
+              <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="/vitaminac.png" class="card-img-top img-fluid" alt="Vitamina C"
+                    style="height: 250px; object-fit: contain;">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Vitamina C</h5>
+                    <p class="card-text flex-grow-1">Suporte para o sistema imunológico e antioxidante natural.</p>
+                    <p class="text-success fw-bold">R$ 39,90</p>
+                    <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse em comprar a Vitamina C."
+                      target="_blank" class="btn btn-custom w-100">Entrar em Contato</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Produto 6 -->
+              <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="/omega3.png" class="card-img-top img-fluid" alt="Ômega 3"
+                    style="height: 250px; object-fit: contain;">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Ômega 3</h5>
+                    <p class="card-text flex-grow-1">Suplemento para saúde cardiovascular e cerebral.</p>
+                    <p class="text-success fw-bold">R$ 59,90</p>
+                    <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse em comprar o Ômega 3."
+                      target="_blank" class="btn btn-custom w-100">Entrar em Contato</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
 
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <div class="row g-4 justify-content-center">
-
-            <!-- Produto 4 -->
-            <div class="col-md-4">
-              <div class="card h-100 shadow-sm">
-                <img src="/bcaa.png" class="card-img-top img-fluid" alt="BCAA" style="height: 250px; object-fit: contain;">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">BCAA</h5>
-                  <p class="card-text flex-grow-1">Aminoácidos essenciais para recuperação muscular e redução da fadiga.</p>
-                  <p class="text-success fw-bold">R$ 79,90</p>
-                  <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse em comprar o BCAA." target="_blank" class="btn btn-custom w-100">Entrar em Contato</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Produto 5 -->
-            <div class="col-md-4">
-              <div class="card h-100 shadow-sm">
-                <img src="/vitaminac.png" class="card-img-top img-fluid" alt="Vitamina C" style="height: 250px; object-fit: contain;">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Vitamina C</h5>
-                  <p class="card-text flex-grow-1">Suporte para o sistema imunológico e antioxidante natural.</p>
-                  <p class="text-success fw-bold">R$ 39,90</p>
-                  <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse em comprar a Vitamina C." target="_blank" class="btn btn-custom w-100">Entrar em Contato</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Produto 6 -->
-            <div class="col-md-4">
-              <div class="card h-100 shadow-sm">
-                <img src="/omega3.png" class="card-img-top img-fluid" alt="Ômega 3" style="height: 250px; object-fit: contain;">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Ômega 3</h5>
-                  <p class="card-text flex-grow-1">Suplemento para saúde cardiovascular e cerebral.</p>
-                  <p class="text-success fw-bold">R$ 59,90</p>
-                  <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse em comprar o Ômega 3." target="_blank" class="btn btn-custom w-100">Entrar em Contato</a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" style="margin-left: -3%;" data-bs-target="#carouselLoja" data-bs-slide="prev"
+          style="top: 68%;">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"></span>
+        </button>
+        <button class="carousel-control-next" type="button" style="margin-right: -3%;" data-bs-target="#carouselLoja" data-bs-slide="next"
+          style="top: 68%;">
+          <span class="carousel-control-next-icon bg-dark rounded-circle p-2"></span>
+        </button>
       </div>
-
-      <!-- Controles -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselLoja" data-bs-slide="prev" style="top: 68%;">
-        <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselLoja" data-bs-slide="next" style="top: 68%;">
-        <span class="carousel-control-next-icon bg-dark rounded-circle p-2"></span>
-      </button>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -585,134 +599,142 @@
 
 
     <section id="planos" class="container text-center py-5">
-      <h2 class="mb-4">Escolha o plano ideal para você</h2>
+  <h2 class="mb-4">Escolha o plano ideal para você</h2>
 
-      <div id="carouselPlanos" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
+  <div id="carouselPlanos" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
 
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-            <div class="row justify-content-center g-4">
-              <!-- Plano 1 -->
-              <div class="col-md-4">
-                <div class="card shadow-sm">
-                  <div class="card-body">
-                    <h5 class="card-title">Mensal</h5>
-                    <p class="card-text fs-5">R$ 99,90/mês<br><small>Sem fidelidade</small></p>
-                    <div class="card-beneficios">
-                      ✔️ Acesso livre a todos os equipamentos<br>
-                      ✔️ Sem fidelidade<br>
-                      ✔️ Aulas coletivas inclusas
-                    </div>
-                    <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse no plano Mensal da Mimo Evolution."
-                      target="_blank" class="btn btn-success mt-3">Quero esse plano</a>
-                  </div>
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="row justify-content-center g-4">
+
+          <!-- Plano 1 -->
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Mensal</h5>
+                <p class="card-text fs-5">R$ 99,90/mês<br><small>Sem fidelidade</small></p>
+                <div class="card-beneficios d-none">
+                  ✔️ Acesso livre a todos os equipamentos<br>
+                  ✔️ Sem fidelidade<br>
+                  ✔️ Aulas coletivas inclusas
                 </div>
-              </div>
-              <!-- Plano 2 -->
-              <div class="col-md-4">
-                <div class="card shadow-sm">
-                  <div class="card-body">
-                    <h5 class="card-title">Trimestral</h5>
-                    <p class="card-text fs-5">R$ 269,90<br><small>Inclui Personal Trainer</small></p>
-                    <div class="card-beneficios">
-                      ✔️ Tudo do plano Mensal<br>
-                      ✔️ + Acompanhamento com Personal Trainer<br>
-                      ✔️ Desconto especial
-                    </div>
-                    <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse no plano Trimestral da Mimo Evolution."
-                      target="_blank" class="btn btn-success mt-3">Quero esse plano</a>
-                  </div>
-                </div>
-              </div>
-              <!-- Plano 3 -->
-              <div class="col-md-4">
-                <div class="card shadow-sm">
-                  <div class="card-body">
-                    <h5 class="card-title">Anual</h5>
-                    <p class="card-text fs-5">R$ 899,90<br><small>Brinde + Consulta Nutricional</small></p>
-                    <div class="card-beneficios">
-                      ✔️ Tudo dos anteriores<br>
-                      ✔️ + Consulta nutricional<br>
-                      ✔️ + Kit brinde exclusivo<br>
-                      ✔️ Melhor custo-benefício
-                    </div>
-                    <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse no plano Anual da Mimo Evolution."
-                      target="_blank" class="btn btn-success mt-3">Quero esse plano</a>
-                  </div>
-                </div>
+                <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse no plano Mensal da Mimo Evolution."
+                  target="_blank" class="btn btn-success mt-3 contato-btn d-none">Entrar em Contato</a>
               </div>
             </div>
           </div>
 
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <div class="row justify-content-center g-4">
-              <!-- Plano 4 -->
-              <div class="col-md-4">
-                <div class="card shadow-sm">
-                  <div class="card-body">
-                    <h5 class="card-title">Semestral</h5>
-                    <p class="card-text fs-5">R$ 499,90<br><small>Personal Trainer e Consulta Nutricional</small></p>
-                    <div class="card-beneficios">
-                      ✔️ Tudo do plano Trimestral<br>
-                      ✔️ + Consulta nutricional<br>
-                      ✔️ Desconto especial
-                    </div>
-                    <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse no plano Semestral da Mimo Evolution."
-                      target="_blank" class="btn btn-success mt-3">Quero esse plano</a>
-                  </div>
+          <!-- Plano 2 -->
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Trimestral</h5>
+                <p class="card-text fs-5">R$ 269,90<br><small>Inclui Personal Trainer</small></p>
+                <div class="card-beneficios d-none">
+                  ✔️ Tudo do plano Mensal<br>
+                  ✔️ + Acompanhamento com Personal Trainer<br>
+                  ✔️ Desconto especial
                 </div>
+                <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse no plano Trimestral da Mimo Evolution."
+                  target="_blank" class="btn btn-success mt-3 contato-btn d-none">Entrar em Contato</a>
               </div>
-              <!-- Plano 5 -->
-              <div class="col-md-4">
-                <div class="card shadow-sm">
-                  <div class="card-body">
-                    <h5 class="card-title">Vitalício</h5>
-                    <p class="card-text fs-5">R$ 2499,90<br><small>Acesso para toda a vida</small></p>
-                    <div class="card-beneficios">
-                      ✔️ Acesso vitalício<br>
-                      ✔️ Benefícios exclusivos<br>
-                      ✔️ Suporte prioritário
-                    </div>
-                    <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse no plano Vitalício da Mimo Evolution."
-                      target="_blank" class="btn btn-success mt-3">Quero esse plano</a>
-                  </div>
+            </div>
+          </div>
+
+          <!-- Plano 3 -->
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Anual</h5>
+                <p class="card-text fs-5">R$ 899,90<br><small>Brinde + Consulta Nutricional</small></p>
+                <div class="card-beneficios d-none">
+                  ✔️ Tudo dos anteriores<br>
+                  ✔️ + Consulta nutricional<br>
+                  ✔️ + Kit brinde exclusivo<br>
+                  ✔️ Melhor custo-benefício
                 </div>
-              </div>
-              <!-- Plano 6 -->
-              <div class="col-md-4">
-                <div class="card shadow-sm">
-                  <div class="card-body">
-                    <h5 class="card-title">Plano VIP</h5>
-                    <p class="card-text fs-5">R$ 1499,90<br><small>Atendimento exclusivo e aulas personalizadas</small>
-                    </p>
-                    <div class="card-beneficios">
-                      ✔️ Aulas exclusivas<br>
-                      ✔️ Atendimento VIP<br>
-                      ✔️ Treinos personalizados
-                    </div>
-                    <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse no plano VIP da Mimo Evolution."
-                      target="_blank" class="btn btn-success mt-3">Quero esse plano</a>
-                  </div>
-                </div>
+                <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse no plano Anual da Mimo Evolution."
+                  target="_blank" class="btn btn-success mt-3 contato-btn d-none">Entrar em Contato</a>
               </div>
             </div>
           </div>
 
         </div>
-
-        <!-- Controles do carrossel -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPlanos" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselPlanos" data-bs-slide="next">
-          <span class="carousel-control-next-icon bg-dark rounded-circle p-2"></span>
-          <span class="visually-hidden">Próximo</span>
-        </button>
       </div>
-    </section>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="row justify-content-center g-4">
+
+          <!-- Plano 4 -->
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Semestral</h5>
+                <p class="card-text fs-5">R$ 499,90<br><small>Personal Trainer e Consulta Nutricional</small></p>
+                <div class="card-beneficios d-none">
+                  ✔️ Tudo do plano Trimestral<br>
+                  ✔️ + Consulta nutricional<br>
+                  ✔️ Desconto especial
+                </div>
+                <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse no plano Semestral da Mimo Evolution."
+                  target="_blank" class="btn btn-success mt-3 contato-btn d-none">Entrar em Contato</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plano 5 -->
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Vitalício</h5>
+                <p class="card-text fs-5">R$ 2499,90<br><small>Acesso para toda a vida</small></p>
+                <div class="card-beneficios d-none">
+                  ✔️ Acesso vitalício<br>
+                  ✔️ Benefícios exclusivos<br>
+                  ✔️ Suporte prioritário
+                </div>
+                <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse no plano Vitalício da Mimo Evolution."
+                  target="_blank" class="btn btn-success mt-3 contato-btn d-none">Entrar em Contato</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plano 6 -->
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Plano VIP</h5>
+                <p class="card-text fs-5">R$ 1499,90<br><small>Atendimento exclusivo e aulas personalizadas</small></p>
+                <div class="card-beneficios d-none">
+                  ✔️ Aulas exclusivas<br>
+                  ✔️ Atendimento VIP<br>
+                  ✔️ Treinos personalizados
+                </div>
+                <a href="https://wa.me/5592985956726?text=Olá! Tenho interesse no plano VIP da Mimo Evolution."
+                  target="_blank" class="btn btn-success mt-3 contato-btn d-none">Entrar em Contato</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controles do carrossel -->
+    <button class="carousel-control-prev" type="button" style="margin-left: -3%;" data-bs-target="#carouselPlanos" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" style="margin-right: -3%;" data-bs-target="#carouselPlanos" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark rounded-circle p-2"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+</section>
+
 
 
   </div>
@@ -789,39 +811,48 @@
       "Anual": "✔️ Tudo dos anteriores<br>✔️ + Consulta nutricional<br>✔️ + Kit brinde exclusivo<br>✔️ Melhor custo-benefício"
     };
 
+
     document.querySelectorAll('#planos .card').forEach(card => {
       card.addEventListener('click', (e) => {
         e.stopPropagation();
 
         // Fecha todos os outros cards
         document.querySelectorAll('#planos .card').forEach(c => {
-          if (c !== card) c.classList.remove('expanded');
+          if (c !== card) {
+            c.classList.remove('expanded');
+            c.querySelector('.card-beneficios')?.classList.add('d-none');
+            c.querySelector('.contato-btn')?.classList.add('d-none');
+          }
         });
 
         // Alterna o card atual
         card.classList.toggle('expanded');
 
-        // Verifica se já existe o bloco de benefícios, se não, cria
-        let beneficiosDiv = card.querySelector('.card-beneficios');
-        if (!beneficiosDiv) {
-          beneficiosDiv = document.createElement('div');
-          beneficiosDiv.classList.add('card-beneficios');
-          card.appendChild(beneficiosDiv);
-        }
+        const beneficiosDiv = card.querySelector('.card-beneficios');
+        const botao = card.querySelector('.contato-btn');
 
-        const titulo = card.querySelector('.card-title').innerText;
-        beneficiosDiv.innerHTML = beneficios[titulo] || "Benefícios não encontrados.";
+        if (card.classList.contains('expanded')) {
+          beneficiosDiv?.classList.remove('d-none');
+          botao?.classList.remove('d-none');
+        } else {
+          beneficiosDiv?.classList.add('d-none');
+          botao?.classList.add('d-none');
+        }
       });
     });
 
-    // Fechar ao clicar fora
+    // Fecha todos ao clicar fora
     document.addEventListener('click', (e) => {
       if (!e.target.closest('#planos .card')) {
         document.querySelectorAll('#planos .card').forEach(card => {
           card.classList.remove('expanded');
+          card.querySelector('.card-beneficios')?.classList.add('d-none');
+          card.querySelector('.contato-btn')?.classList.add('d-none');
         });
       }
     });
+
+
 
 
   </script>
